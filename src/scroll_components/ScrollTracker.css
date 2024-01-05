@@ -1,0 +1,22 @@
+.scroll-tracker-container{
+    height: .5rem;
+    inset: 0 0 auto;
+    background-color: transparent;
+    position: fixed;
+    display: flex;
+    z-index: 10;
+}
+.scroll-tracker {
+    position: absolute;
+    height: 100%;
+    background-color: #20c8f2df;
+    opacity: 0.8;
+}
+.scroll-tracker-percentage{
+    position: absolute;
+    right: 5px;
+    color: green;
+    z-index: 10;
+    font-size: 0.5rem;
+    
+}

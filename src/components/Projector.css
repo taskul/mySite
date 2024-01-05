@@ -1,0 +1,73 @@
+.projector-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.projector-outter-ring {
+    margin-top: 40px;
+    /* margin-left: 100px; */
+    position: absolute;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 1.5px solid #dadada;
+    background-color: #191919;
+    border-left: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projector-middle-ring {
+    position: absolute;
+    width: 500px;
+    height: 40px;
+    left: -500px;
+    background-color: #191919;
+    border: 1.5px solid #dadada;
+    border-right: none;
+}
+
+.projector-inner-ring {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 4px dashed rgb(232, 232, 232);
+    animation: rotator 3s infinite;
+}
+
+@keyframes rotator {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.blinking-light {
+    font-size: 0.5rem;
+    color: #4ef990;
+    animation: blinking-light 2s ease-in-out infinite;
+    text-align: center;
+  }
+  @keyframes blinking-light {
+    0% {
+      opacity: 0.1;
+    }
+    25% {
+        opacity: .5;
+    }
+    50% {
+      opacity: .9;
+    }
+    75% {
+        opacity: .5;
+    }
+    100% {
+      opacity: 0.1;
+    }
+  }

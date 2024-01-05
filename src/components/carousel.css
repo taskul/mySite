@@ -1,0 +1,214 @@
+.carousel {
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+
+
+.carousel-slide {
+    display:flex;
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    border: 2px solid#191919;
+    color: white;
+    text-align: center;
+}
+
+.carousel-slide-img {
+    width: 100%;
+    position: absolute;
+    object-fit: fit;
+    border-radius: 5px;
+    border: 2px solid black;
+    transition: all 0.7s ease;
+}
+
+.carousel-slide-link {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 9;
+}
+
+.carousel-slide-link:focus {
+    outline: 2px solid rgb(92, 216, 254);
+}
+
+.carousel-slide-cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    transition: all 0.7s ease;
+}
+
+.carousel-light  {
+    margin-top: 174px;
+    position: absolute;
+    background-image: url('../../public/assets/under-light.svg');
+    background-position: center center; 
+    background-repeat: no-repeat;
+    width: 270px;
+    height: 20px;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+    animation: flickerLight 0.8s;
+  }
+.carousel-light-holder {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-light-glow {
+    margin-top: 194px;
+    position: absolute;
+    height: 1px;
+    width: 96px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 1px #fff;
+    border: none;
+    animation: flickerLight 0.8s;
+}
+
+@keyframes flickerLight {
+    0% {opacity: 0.5;}
+    25% {opacity: 0.9;}
+    50% {opacity: 0.6;}
+    60% {opacity: 0.9;}
+    80% {opacity: 0.7;}
+    100% {opacity: 1;}
+  }
+
+
+.text-display-container {
+    margin-top: -5px;
+    position: absolute;
+    padding: 0px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-text-display {
+    margin-top: 201px;
+    position: absolute;
+    border-radius: 10px;
+    width: 120px;
+    height: 30px;
+    background: #252D3A;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.35), -4px -4px 4px 0px rgba(77, 93, 120, 0.20), 5px 5px 5px 0px rgba(77, 93, 120, 0.50) inset, -5px -5px 6px 0px #1A2028 inset;
+}
+
+.blinking-light {
+    font-size: 0.5rem;
+    color: #4ef990;
+    animation: blinking-light 2s ease-in-out infinite;
+  }
+  @keyframes blinking-light {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: .5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.carousel-text-light-glow {
+    margin-top: 232px;
+    position: absolute;
+    height: 1px;
+    width: 96px;
+    background-color: rgb(131, 254, 78);
+    box-shadow: 0px 0px 10px 1px #a8ff76;
+    border: none;
+    animation: createBox 1.5s;
+}
+
+.carousel-text-light {
+    margin-top: 233px;
+    position: absolute;
+    background-image: url('../../public/assets/lazer-light.svg');
+    background-position: center center; 
+    background-repeat: no-repeat;
+    width: 270px;
+    height: 20px;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+    animation: createBox 1.5s;
+}
+
+  @keyframes createBox {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+
+.carousel-text {
+    margin-top: 253px;
+    position: absolute;
+    font-size: 0.9rem;
+    color: #91ec80;
+}
+
+.carousel-subtext {
+    color: #cffcc7;
+}
+
+@keyframes typing {
+    0% { width: 0; }
+    25% { width: 100%; }
+    50% { width: 100%; }
+    75% { width: 100%; }
+    100% { width: 100%;}
+}
+
+.typewriter-text {
+    display: inline-block;
+    white-space: wrap;
+    overflow: hidden;
+    border-left: 2px solid #32f449;
+    border-right: 2px solid #32f449;
+}
+
+
+.typewriter-text {
+    margin: 0; /* Remove default paragraph margin */
+    animation: typing 5s steps(40) forwards;
+}
+
+
+.end-of-page-padding {
+    width: 100%;
+    height: 40px;
+}
+
+.carousel-slide:nth-child(1) { transform: rotateY(  0deg) translateZ(193px); }
+.carousel-slide:nth-child(2) { transform: rotateY( 72deg) translateZ(193px); }
+.carousel-slide:nth-child(3) { transform: rotateY( 144deg) translateZ(193px); }
+.carousel-slide:nth-child(4) { transform: rotateY(216deg) translateZ(193px); }
+.carousel-slide:nth-child(5) { transform: rotateY(288deg) translateZ(193px); }
+
+@media (min-width: 60rem) {
+    .carousel {
+        margin-top: 10px;
+      }
+    .carousel-text {
+        margin-top: 253px;
+        position: absolute;
+        font-size: 0.7rem;
+        color: #91ec80;
+    }
+}
