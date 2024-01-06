@@ -25,6 +25,7 @@ function App() {
       <BrowserRouter>
       <NavBar />
       <ScrollTracker />
+      <AppRoutes />
       <MainContainer> 
         <BoxContainer num={1} fieldset={"About Me #0"} color={"ffd500e5"}>
           <ImageContainer 
