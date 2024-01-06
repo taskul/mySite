@@ -27,7 +27,7 @@ export default function NavBar() {
                     <div className="NavBar-btn-holder">
                         <li className="NavBar-link-left-btn" onClick={closeNavbar}
                         >
-                            <NavLink to='/mySite'>About me</NavLink>
+                            <NavLink to='/'>About me</NavLink>
                         </li>
                         <li className="NavBar-link-center-btn" onClick={closeNavbar}>
                             <NavLink to='/projects'>Projects</NavLink>

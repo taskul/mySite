@@ -22,8 +22,8 @@ function App() {
 
   return (
     <div className="App">
-      {/* <BrowserRouter>
-      <NavBar /> */}
+      <BrowserRouter>
+      <NavBar />
       <ScrollTracker />
       <MainContainer> 
         <BoxContainer num={1} fieldset={"About Me #0"} color={"ffd500e5"}>
@@ -68,7 +68,7 @@ function App() {
           <Description textArr={[projects[1].description, projects[1].techStack]}/>
         </BoxContainer>
         </MainContainer>
-     {/* </BrowserRouter> */}
+     </BrowserRouter>
     </div>
   );
 }
