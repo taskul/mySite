@@ -12,7 +12,8 @@
 .image-container-img {
     width: 270px;
     height: 200px;
-    object-fit: cover;
+    object-fit: fill;
+    margin-bottom: 0px;
     box-shadow: 0 0 .1rem #fff,
     0 0 .1rem #fff,
     0 0 0.2rem #7fc7d9,
