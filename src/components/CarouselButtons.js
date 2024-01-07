@@ -1,3 +1,5 @@
+import "./carousel.css"
+
 import React, { useState, useEffect } from 'react';
 
 export default function CarouselButtons ({children}) {
@@ -22,18 +24,7 @@ export default function CarouselButtons ({children}) {
   }, []);
 
   return (
-    <div
-      style={{
-        position: isFixed ? 'fixed' : 'absolute',
-        bottom: 0,
-        left: 0,
-        width: '100%',
-        backgroundColor: "#191919",
-        color: '#fff',
-        textAlign: 'center',
-        padding: '0px',
-    }}
-    >
+    <div className="carousel-btn-holder">
         {children}
     </div>
   );

@@ -1,0 +1,118 @@
+.contact-form-container{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 5;
+}
+label {
+    color: #91ec80;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    background-color: transparent;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin-bottom: 2rem;
+}
+
+input {
+    background-color: transparent;
+    border-color: #91ec80;
+    color: #91ec80;
+    width: 280px;
+    font-size: 1.1rem;
+}
+
+textarea {
+    background-color: transparent;
+    border-color: #91ec80;
+    color: #91ec80;
+    width: 280px;
+    height: 200px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.carousel-text-light {
+    margin-top: -20px;
+    position: absolute;
+    background-image: url('../../public/assets/lazer-light.svg');
+    background-position: center center; 
+    background-repeat: no-repeat;
+    width: 370px;
+    height: 20px;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+    animation: createBox 1.5s;
+}
+
+  @keyframes createBox {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+
+.carousel-text {
+    position: absolute;
+    font-size: 1rem;
+    color: #91ec80;
+}
+
+.carousel-subtext {
+    color: #cffcc7;
+}
+
+@keyframes typing {
+    0% { width: 0; margin: 0px 50%;}
+    100% { width: 100%; margin: 0%;}
+}
+
+.typewriter-text {
+    display: absolute;
+    white-space: wrap;
+    overflow: hidden;
+    width: 370px;
+    border-left: 2px solid #32f449e1;
+    border-right: 2px solid #32f449e1;
+    animation: typing 1s steps(40) forwards;
+}
+
+.typewriter-message {
+    display: absolute;
+    white-space: wrap;
+    overflow: hidden;
+    width: 370px;
+    color: #32f449e1;
+    padding: 10px;
+    border-left: 2px solid #32f449e1;
+    border-right: 2px solid #32f449e1;
+    animation: typing 1s steps(40) forwards;
+}
+
+
+@media (min-width: 60rem) {
+    form {
+        width: 400px;
+    }
+    input {
+        width: 380px;
+    }
+    
+    textarea {
+        width: 380px;
+        height: 250px;
+    }
+}
+

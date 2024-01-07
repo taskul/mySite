@@ -1,0 +1,61 @@
+.carousel-container {
+    border: none;
+    position: relative;
+    width: 280px;
+    height: 200px;
+    margin: 24px auto 0px auto;
+    perspective: 1000px;
+  }
+
+.carousel-btn-holder {
+    position: absolute;
+    top: 140px;
+    left: -13px;
+    display: flex;
+    justify-content: space-between;
+    width: 305px;
+    z-index: 4;
+}
+
+.dark-round-button {
+    background-color: #7fc7d9d8;
+    box-shadow: 0px 0px 5px 1px #000 ;
+    color: rgba(0, 0, 0, 1);
+    border: none;
+    font-size: 2rem;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: showButtons  1s forwards;
+    animation-delay: 250ms;
+}
+
+@keyframes showButtons {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+.dark-round-button:hover {
+    color: rgb(38, 125, 206);
+    text-shadow: rgb(58, 150, 236) 1px 1px 20px;
+}
+
+.dark-round-button:active {
+    color: rgb(62, 196, 25);
+    text-shadow: rgb(100, 234, 63) 1px 1px 20px;
+}
+
+@media (min-width: 60rem) {
+    .carousel-btn-holder {
+        top: 120px;
+        left: -50px;
+        width: 365px;
+    }
+}
+

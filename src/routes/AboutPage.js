@@ -3,14 +3,18 @@ import ImageContainer from "../components/ImageContainer";
 import BoxContainer from "../scroll_components/BoxContainer";
 import Description from "../components/Description";
 import description from "../data/descriptionData";
+import ProjectTitle from "../components/ProjectTitle";
+import MainContainer from "../components/MainContainer";
+import aboutMe from "../data/aboutMe";
+import SocialIcons from "../components/SocialIcons";
 
 export default function AboutPage() {
     return (
-        <BoxContainer num={1} fieldset={"About Me #0"} color={"ffd500e5"}>
+      <MainContainer> 
+        <BoxContainer num={1} fieldset={"About Me #1"} color={"ffd500e5"}>
         <ImageContainer 
           imgUrl={"/imgs/my_photos/my_photo.jpg"} 
           alt={"photo of Tastan"}
-          url={'yet'}
           position={'left'}  
         />
         <div className='typed-text-container'>
@@ -28,6 +32,19 @@ export default function AboutPage() {
           />
         </div>
         <Description textArr={[description[0], description[1]]}/>
+        <SocialIcons />
       </BoxContainer>
+
+      <BoxContainer num={2} fieldset={"About Me #2"}>
+        <ProjectTitle title={"About me"} />
+        <ImageContainer 
+          imgUrl={"/imgs/dnd-den.jpg"} 
+          imgAlt={"DND Den Project"} 
+          position={'right'}
+          carousel={true}
+        />
+          <Description textArr={[...aboutMe]}/>
+    </BoxContainer> 
+    </MainContainer>
     )
 }

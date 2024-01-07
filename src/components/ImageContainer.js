@@ -1,20 +1,44 @@
+import AboutCarousel from "../routes/AboutCarousel";
 import "./ImageContainer.css"
 import Projector from "./Projector"
 
-export default function ImageContainer({children, imgUrl, imgAlt, url, position}) {
+export default function ImageContainer({children, imgUrl, imgAlt, url, position, carousel}) {
 
-    const cursor = url? {cursor: "pointer"} : '';
+    const handleClick = () => {
+        window.open(url, '_blank');
+      };
 
     return (
         <div className="image-container">
-            <img 
+
+            {carousel ? 
+                <AboutCarousel /> 
+            :   
+            <>
+                <img 
                 className="image-container-img"
                 src={process.env.PUBLIC_URL + imgUrl} 
                 alt={imgAlt} 
-                style={{...cursor}}
+                // style={{...cursor}}
             />
-            <div className="sceen-flicker-line"></div>
-            <div className="image-container-img-holographic" style={{...cursor}}></div>
+                <div className="sceen-flicker-line"></div>
+                <div className="image-container-img-holographic" 
+                ></div> 
+                {url ?
+                    <a
+                        href={url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="carousel-slide-link"
+                        onClick={handleClick}
+                    >
+                    </a>
+                    :
+                    null
+                }  
+            </>
+            }
+
         <div className="image-container-light-holder">
             <div 
                 className="image-container-light"
@@ -22,9 +46,9 @@ export default function ImageContainer({children, imgUrl, imgAlt, url, position}
             <div 
                 className="image-container-light-glow"
             ></div>
-            </div>
+        </div>
             <Projector position={position}/>
             {children}
-        </div>
+    </div>
     )
 }
