@@ -10,10 +10,10 @@
 .carousel-btn-holder {
     position: absolute;
     top: 140px;
-    left: -13px;
+    left: 0px;
     display: flex;
     justify-content: space-between;
-    width: 305px;
+    width: 280px;
     z-index: 4;
 }
 
@@ -23,12 +23,13 @@
     color: rgba(0, 0, 0, 1);
     border: none;
     font-size: 2rem;
-    height: 55px;
-    width: 55px;
+    height: 45px;
+    width: 45px;
     border-radius: 50%;
     cursor: pointer;
     animation: showButtons  1s forwards;
     animation-delay: 250ms;
+    text-align: center;
 }
 
 @keyframes showButtons {
@@ -54,8 +55,8 @@
 @media (min-width: 60rem) {
     .carousel-btn-holder {
         top: 120px;
-        left: -50px;
-        width: 365px;
+        left: 0px;
+        width: 280px;
     }
 }
 

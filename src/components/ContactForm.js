@@ -29,18 +29,18 @@ export default function ContactUs () {
   return (
     <div className='contact-form-container'>
         <div className="carousel-text-light"></div>
-            <p className="typewriter-text" >
+            <div className="typewriter-text" >
                 <form ref={form} onSubmit={sendEmail}>
-                <label>Name</label>
+                <label>Your Name</label>
                 <input type="text" name="from_name" />
-                <label>Email</label>
+                <label>Your Email</label>
                 <input type="email" name="user_email" />
                 <label>Message</label>
                 <textarea name="message" />
-                <input type="submit" value="Send" />
+                <input className="send-button" type="submit" value="Send" />
                 {emailSent && <p className='typewriter-message'>Your message has been sent. Have a wonderful day.</p>}
                 </form>
-            </p>
+            </div>
     </div>
   );
 };
