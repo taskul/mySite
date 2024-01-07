@@ -6,6 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   
 }
 
 .image-container-img {
@@ -84,11 +85,20 @@
 
 .carousel-slide-link {
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: -40px;
     width: 270px;
     height: 200px;
+    color: #ffffff;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: white;
+    opacity: 0.7;
+    text-decoration: none;
     cursor: pointer;
     z-index: 9;
+    animation: flickerLight 0.8s;
 }
 
 .carousel-slide-link:focus {

@@ -22,6 +22,7 @@ form {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     margin-bottom: 2rem;
+    animation: typing 1s steps(40) forwards;
 }
 
 input {

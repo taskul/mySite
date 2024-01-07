@@ -11,7 +11,6 @@ export default function ScrollTracker() {
             const scrollY = window.scrollY;
             const scrollPercentage = (scrollY / (documentHeight - windowHeight)) * 100;
             setScrollPercentage(scrollPercentage);
-            console.log(scrollPercentage);
         };
 
         window.addEventListener("scroll", handleScroll);

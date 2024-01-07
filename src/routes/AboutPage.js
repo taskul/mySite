@@ -14,7 +14,7 @@ export default function AboutPage() {
         <BoxContainer num={1} fieldset={"About Me #1"} color={"ffd500e5"}>
         <ImageContainer 
           imgUrl={"/imgs/my_photos/my_photo.jpg"} 
-          alt={"photo of Tastan"}
+          imgAlt={"Tastan profile"}
           position={'left'}  
         />
         <div className='typed-text-container'>

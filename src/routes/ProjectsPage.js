@@ -10,23 +10,24 @@ export default function ProjectsPage() {
     return (
       <MainContainer>
         <BoxContainer num={2} fieldset={"Project #01"}>
-        <ProjectTitle title={"DnD Den"} />
-        <ImageContainer 
+          <ImageContainer 
           imgUrl={"/imgs/dnd-den.jpg"} 
           imgAlt={"DND Den Project"} 
-          position={'right'}
+          position={'left'}
           url={'https://dnd-game.onrender.com/'}
         />
+        <ProjectTitle title={"DnD Den"} />
           <Description textArr={[projects[0].description, projects[0].techStack]}/>
       </BoxContainer> 
       <BoxContainer num={3} fieldset={"Project #02"}>
+      <ProjectTitle title={"Peapods"} />
         <ImageContainer 
           imgUrl={"/imgs/peapods.jpg"} 
           imgAlt={"Peapods Project"}
-          position={'left'}  
+          position={'right'}  
           url={'https://peapods.onrender.com/'}
         />
-        <ProjectTitle title={"Peapods"} />
+        
         <Description textArr={[projects[1].description, projects[1].techStack]}/>
       </BoxContainer>
     </MainContainer>

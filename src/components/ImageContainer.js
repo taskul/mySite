@@ -19,7 +19,6 @@ export default function ImageContainer({children, imgUrl, imgAlt, url, position,
                 className="image-container-img"
                 src={process.env.PUBLIC_URL + imgUrl} 
                 alt={imgAlt} 
-                // style={{...cursor}}
             />
                 <div className="sceen-flicker-line"></div>
                 <div className="image-container-img-holographic" 
@@ -32,6 +31,7 @@ export default function ImageContainer({children, imgUrl, imgAlt, url, position,
                         className="carousel-slide-link"
                         onClick={handleClick}
                     >
+                        Click to view
                     </a>
                     :
                     null
