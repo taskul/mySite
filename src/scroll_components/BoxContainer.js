@@ -17,7 +17,6 @@ export default function BoxContainer({ children, num, fieldset, borderColor }) {
       control.start(i => ({
         opacity: 1,
         width: "90%",
-        transition: { delay: i * 3 }
       }));
     } else {
       control.start({ opacity: 0.7, 

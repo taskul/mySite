@@ -17,7 +17,7 @@ export default function ContactUs () {
         process.env.REACT_APP_PUBLIC_KEY)
       .then((result) => {
             setEmailSent(true);
-          formData.user_name.value = "";
+          formData.from_name.value = "";
           formData.user_email.value = "";
           formData.message.value = "";
           console.log(result.text);
@@ -32,7 +32,7 @@ export default function ContactUs () {
             <p className="typewriter-text" >
                 <form ref={form} onSubmit={sendEmail}>
                 <label>Name</label>
-                <input type="text" name="user_name" />
+                <input type="text" name="from_name" />
                 <label>Email</label>
                 <input type="email" name="user_email" />
                 <label>Message</label>
