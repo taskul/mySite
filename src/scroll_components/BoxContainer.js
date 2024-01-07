@@ -14,15 +14,11 @@ export default function BoxContainer({ children, num, fieldset, borderColor }) {
 
   useEffect(() => {
     if (inView) {
-      control.start(i => ({
+      control.start({
         opacity: 1,
         width: "90%",
-      }));
-    } else {
-      control.start({ opacity: 0.7, 
-        width: "80%",
       });
-    }
+    } 
   }, [control, inView]);
 
   return (
