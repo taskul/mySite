@@ -12,7 +12,7 @@
 .image-container-img {
     width: 270px;
     height: 200px;
-    object-fit: fill;
+    object-fit: cover;
     margin-bottom: 0px;
     box-shadow: 0 0 .1rem #fff,
     0 0 .1rem #fff,
