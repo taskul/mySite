@@ -7,8 +7,14 @@ import ProjectTitle from "../components/ProjectTitle";
 import MainContainer from "../components/MainContainer";
 import aboutMe from "../data/aboutMe";
 import SocialIcons from "../components/SocialIcons";
+import { useEffect } from "react";
 
 export default function AboutPage() {
+
+  useEffect(() => {
+    document.title = "Tastan's About Me Page"
+ }, []);
+
     return (
       <MainContainer> 
         <BoxContainer num={1} fieldset={"About Me #1"} color={"ffd500e5"}>

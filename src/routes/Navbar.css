@@ -5,7 +5,7 @@
     opacity: 0.97;
     border-bottom: 1px solid rgb(0,0,0);
     position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 55px;
     display: flex;
     justify-content: center;

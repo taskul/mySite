@@ -1,5 +1,11 @@
+.main-carousel-container {
+  display: flex;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 1px #fff;
+}
+
 .carousel {
-    margin-top: 10px;
     width: 270px;
     height: 200px;
     position: absolute;
@@ -172,9 +178,6 @@
 .carousel-slide:nth-child(5) { transform: rotateY(288deg) translateZ(193px); }
 
 @media (min-width: 60rem) {
-    .carousel {
-        margin-top: 10px;
-      }
     .carousel-text {
         margin-top: 253px;
         position: absolute;

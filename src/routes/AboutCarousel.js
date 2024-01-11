@@ -1,6 +1,7 @@
 import React,{ useEffect, useState } from "react"
 import Carousel from "../components/Carousel"
 import "../components/CarouselButtons.css"
+import "../components/carousel.css"
 import "../App.css"
 import CarouselButtons from "../components/CarouselButtons"
 
@@ -44,7 +45,7 @@ export default function AboutCarousel() {
     }
 
     return (
-        <div className="main-container">
+        <div className="main-carousel-container ">
             <div className="carousel-container">
                 <Carousel 
                     rotationAttributes={rotationAttributes}

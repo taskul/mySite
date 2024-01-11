@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Description from "../components/Description";
 import ImageContainer from "../components/ImageContainer";
 import MainContainer from "../components/MainContainer";
@@ -7,6 +8,12 @@ import BoxContainer from "../scroll_components/BoxContainer";
 
 
 export default function ProjectsPage() {
+
+  useEffect(() => {
+    document.title = "Tastan's Projects Page"
+ }, []);
+
+
     return (
       <MainContainer>
         <BoxContainer num={2} fieldset={"Project #01"}>
