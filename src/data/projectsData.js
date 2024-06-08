@@ -14,6 +14,13 @@ const projects = [
         url: "https://peapods.onrender.com/"
     },
     {
+        img: "/imgs/vizenv.png",
+        alt: "VizEnv Project thumbnail",
+        description: "VizEnv is a Windows terminal application that makes it easier to visualize terminal command output. It also allows user to activate common commands for Python and Node.js environments with a click of a button ",
+        techStack: "Build with React.js, CSS, HTML and Electron.js",
+        url: "http://vizenv.xyz/"
+    },
+    {
         img: "/imgs/memory-game-project.png",
         alt: "Memory Game Project thumbnail",
         description: "This is a matching cards memory gam. It keeps track of the user's best score in localStorage.",

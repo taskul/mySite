@@ -16,7 +16,19 @@ export default function ProjectsPage() {
 
     return (
       <MainContainer>
-        <BoxContainer num={2} fieldset={"Project #01"}>
+      <BoxContainer num={1} fieldset={"Project #01"}>
+        <ProjectTitle title={"VizEnv"} />
+          <ImageContainer 
+            imgUrl={"/imgs/vizenv.png"} 
+            imgAlt={"VizEnv Project"}
+            position={'right'}  
+            url={'http://vizenv.xyz/'}
+          />
+          
+          <Description textArr={[projects[2].description, projects[2].techStack]}/>
+      </BoxContainer>
+
+        <BoxContainer num={2} fieldset={"Project #02"}>
           <ImageContainer 
           imgUrl={"/imgs/dnd-den.jpg"} 
           imgAlt={"DND Den Project"} 
@@ -26,7 +38,8 @@ export default function ProjectsPage() {
         <ProjectTitle title={"DnD Den"} />
           <Description textArr={[projects[0].description, projects[0].techStack]}/>
       </BoxContainer> 
-      <BoxContainer num={3} fieldset={"Project #02"}>
+
+      <BoxContainer num={3} fieldset={"Project #03"}>
       <ProjectTitle title={"Peapods"} />
         <ImageContainer 
           imgUrl={"/imgs/peapods.jpg"} 
